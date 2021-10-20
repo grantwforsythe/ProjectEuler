@@ -23,12 +23,33 @@ func main() {
 
 
 func ispalindrome(num string) bool {
+    /*
+        Description:    Check if a string is a panlindrome.
+        Parameters:     num             - string
+        Return:         a boolean value 
+        Example of Usage:
+        >> ispalindrome("racecar")
+        ans =
+            True 
+        >> ispalindrome("dog")
+        ans =
+            False
+    */
     return num == reverse(num)
 }
 
 
-func reverse(num string) string {
-	r := []rune(num)
+func reverse(str string) string {
+    /*
+        Description:    Reverses a string.
+        Parameters:     str             - string
+        Return:         reversed string 
+        Example of Usage:
+        >> reverse("cat")
+        ans =
+            tac 
+    */
+	r := []rune(str)
     var res []rune
     for i := len(r) - 1; i >= 0; i-- {
         res = append(res, r[i])

@@ -10,6 +10,18 @@ def main():
     print(f"Answer: {result}")
 
 def ispanlindrome(num: str) -> bool:
+    """
+        Description:    Check if a string is a panlindrome.
+        Parameters:     num             - str
+        Return:         a boolean value 
+        Example of Usage:
+        >> ispalindrome("racecar")
+        ans =
+            True 
+        >> ispalindrome("dog")
+        ans =
+            False
+    """ 
     return num == num[::-1]
 
 
