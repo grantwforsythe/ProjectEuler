@@ -22,7 +22,7 @@ func main() {
 }
 
 
-func ispalindrome(num string) bool {
+func isPalindrome(num string) bool {
     /*
         Description:    Check if a string is a panlindrome.
         Parameters:     num             - string
