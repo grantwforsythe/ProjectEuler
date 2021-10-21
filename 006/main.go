@@ -9,9 +9,10 @@ import (
 func main(){
 	limit := 100
 	sum := limit * (limit + 1) /2
+	// proof: https://github.com/grantwforsythe/project-euler/tree/main/proofs/006.pdf
 	sum_sq := ((2 * limit + 1)*(limit + 1) * limit) / 6
 	
-	result := int(math.Pow(float64(sum), 2) - math.Pow(float64(sum_sq), 2))
-	fmt.Printf("Answer: %f", result)
+	result := math.Pow(float64(sum), 2) - float64(sum_sq)
+	fmt.Printf("Answer: %d\n", int(result))
 	
 }
